@@ -1,0 +1,144 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Chris Kim
+   Date:   11.14.18
+   
+   Filename: br_styles.css
+   
+   */
+
+html {
+    color: #222;
+    font-size: 1em;
+    background: #003973;
+    background: -webkit-linear-gradient(to right, rgba(29, 50, 141, 0.644), #053d41bd);
+    background: linear-gradient(to right, rgba(29, 50, 141, 0.644), #053d41bd);
+}
+
+body {
+    margin: auto;
+    width: 960px;
+}
+
+nav {
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    filter: drop-shadow(0 0 100px black);
+    margin: 0, auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    background-color: #003973
+}
+
+/* Displayed the nav as a table. */
+body>nav {
+    display: table;
+    width: 100%;
+}
+
+body>nav>ul {
+    display: table-row;
+    list-style-type: none;
+}
+
+body>nav>ul>li {
+    display: table-cell;
+    text-align: center;
+}
+
+/* I used a slight variation of the styles from the p tag styles. */
+nav a {
+    margin: 6px -3px;
+    padding: 13px 5px;
+    background-color: rgba(255, 255, 255, 0.37);
+    text-decoration: none;
+    color: rgb(65, 73, 248);
+    font-size: 15px;
+    vertical-align: middle;
+    border: rgba(29, 50, 141, 0.644) .75px solid;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+li a:hover {
+    transition: .1s;
+    color: rgb(65, 73, 248);
+    border: rgba(29, 50, 141, 0.644) .75px solid;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+body h1 {
+    padding-left: 2.5%;
+    padding-top: 1%;
+    color: rgb(73, 73, 73);
+    font-family: 'Raleway', sans-serif;
+}
+
+body > header > img {
+    display: block;
+    width: 100%;
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+
+  }
+  /* I used the same specifications as the p selector styles. */
+  .wrapper {
+    max-width: 1200px;
+    margin: 5px;
+    padding: 2vw;
+    background-color: black;
+    border: rgb(84, 204, 37) 2px solid;
+    border-radius: 5px;
+    color: rgb(73, 73, 73);
+    box-shadow: 0 0 10px black;
+    display: grid;
+    line-height: 20px;
+    background-color: rgba(255, 255, 255, 0.61);
+    font-family: 'Raleway', sans-serif;
+  }
+
+p {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2vw;
+    background-color: black;
+    border: rgb(65, 73, 248) 1px solid;
+    border-radius: 5px;
+    color: rgb(73, 73, 73);
+    box-shadow: 0 0 10px black;
+    display: block;
+    line-height: 20px;
+    background-color: rgba(255, 255, 255, 0.61);
+    font-family: 'Raleway', sans-serif;
+}
+
+aside {
+    margin-left: 775px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    overflow: auto;
+    height: 600px;
+    width: 300px;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: rgb(51, 51, 51) 10px 10px 50px, rgb(51, 51, 51) -10px 10px 50px;
+}
